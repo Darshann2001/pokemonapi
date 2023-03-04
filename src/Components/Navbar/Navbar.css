@@ -1,0 +1,28 @@
+.nav-parent {
+    background-color: #db0527;
+    transition: all .4s;
+    width: 100%;
+}
+
+.nav-parent:hover {
+    background-color: #ce082c;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 5px;
+}
+
+h1 img {
+    width: 170px;
+    height: 50px;
+    border-radius: 20px;
+    object-fit: cover;
+    cursor: pointer;
+}
+ .navbar p{
+    font-size: 14px;
+    color: rgb(250, 237, 237);
+ }
