@@ -13,7 +13,6 @@ const PokemonInfo = () => {
         const api = await fetch(url);
         const res = await api.json();
         getPokemon(res.results)
-        setPokemon(res.next);
     }
 
     const getPokemon = async (res) => {
@@ -29,15 +28,8 @@ const PokemonInfo = () => {
         })
     }
 
-    useEffect(() => {
-        const pokemonReturn = () => {
-            pokemonFunction()
-            console.log('rendered')
-        }
-        return () => pokemonReturn()
-    }, [url]);
 
-    
+    window.addEventListener('load', pokemonFunction)
 
     return (
         <div className="container">
